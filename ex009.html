@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/justthetwo.ico" type="image/x-icon">
+    <title>Nono Exercício</title>
+</head>
+<body>
+    <h1>Áudios e Vídeos</h1>
+    <audio src="midia/on_the_flip.mp3" controls autoplay></audio>
+    <!--formatos de audio são MP3 WAV e OGG-->
+    <p>outra forma de carregar áudios</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/on_the_flip.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não carregou o áudio, <a href="midia/on_the_flip.mp3">Clique aqui para baixar o áudio</a></p>
+    </audio>
+    <!--formatos de video são mp4, m4v webm ogv-->
+    <!--tem que ter todos os arquivos para compatibilidade de navegador, igual feito com o audio-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado em meu servidor</p>
+    <video src="midia/15011781_1080_1920_60fps.mp4" width="200" height="400" controls loop></video>
+    <video controls poster="imagens/y2-1024x576.jpg" width="200" height="400" loop>
+        <source src="midia/15011781_1080_1920_60fps.mp4">
+        <p>seu navegador não tem compatibilidade</p>
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SXvzbv7iuBU?si=0cXeDJlNUjVdHvmn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
